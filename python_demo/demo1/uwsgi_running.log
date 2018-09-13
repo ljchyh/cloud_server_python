@@ -1,0 +1,46 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 11:06:18 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x55e0f87f9030
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e0f87f9030 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 11929, cores: 1)
+Python auto-reloader enabled
+thomasli.tk [pid: 11929|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 11:06:28 2018] GET / => generated 12 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 2/2] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 11:06:29 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 3/3] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:06:29 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 4/4] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 11:07:05 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 5/5] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 11:07:06 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 6/6] 112.90.82.164 () {40 vars in 473 bytes} [Thu Sep 13 11:09:38 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 7/7] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:16:18 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
