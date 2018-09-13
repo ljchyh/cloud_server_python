@@ -44,3 +44,378 @@ thomasli.tk [pid: 11929|app: 0|req: 4/4] 218.107.55.254 () {46 vars in 754 bytes
 thomasli.tk [pid: 11929|app: 0|req: 5/5] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 11:07:06 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
 thomasli.tk [pid: 11929|app: 0|req: 6/6] 112.90.82.164 () {40 vars in 473 bytes} [Thu Sep 13 11:09:38 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
 thomasli.tk [pid: 11929|app: 0|req: 7/7] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:16:18 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 8/8] 112.90.82.139 () {40 vars in 473 bytes} [Thu Sep 13 11:19:27 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+www.utmtoken.com [pid: 11929|app: 0|req: 9/9] 45.77.47.211 () {36 vars in 566 bytes} [Thu Sep 13 11:23:28 2018] GET /js/czjl.js => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 10/10] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:26:07 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 11/11] 113.142.18.18 () {40 vars in 473 bytes} [Thu Sep 13 11:29:18 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 12/12] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:35:57 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 13/13] 103.7.29.172 () {40 vars in 472 bytes} [Thu Sep 13 11:39:06 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 14/14] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:45:44 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 15/15] 103.7.29.172 () {40 vars in 472 bytes} [Thu Sep 13 11:48:54 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 16/16] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 11:55:33 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 17/17] 112.90.82.139 () {40 vars in 473 bytes} [Thu Sep 13 11:58:42 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 18/18] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:00:47 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 19/19] 218.107.55.254 () {44 vars in 735 bytes} [Thu Sep 13 12:01:06 2018] GET /user/1 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 20/20] 43.226.76.60 () {36 vars in 552 bytes} [Thu Sep 13 12:03:17 2018] GET /niaoyun-auth-1f8a7ebb0b1a1ec06f16205b95e88d53.txt => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 21/21] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 12:05:21 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 22/22] 184.105.164.228 () {40 vars in 475 bytes} [Thu Sep 13 12:08:31 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 23/23] 218.107.55.254 () {44 vars in 731 bytes} [Thu Sep 13 12:09:47 2018] GET /user => generated 233 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (2 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 24/24] 218.107.55.254 () {44 vars in 723 bytes} [Thu Sep 13 12:09:50 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 25/25] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:26 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 26/26] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:27 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 27/27] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:56 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 28/28] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:57 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 29/29] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:57 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 30/30] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:58 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 31/31] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:58 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 32/32] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:58 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 11929|app: 0|req: 33/33] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:10:58 2018] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 11929)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:12:30 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x556414582f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556414582f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12357, cores: 1)
+Python auto-reloader enabled
+thomasli.tk [pid: 12357|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:12:30 2018] GET / => generated 15 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12357)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:14:27 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x559ddf309f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559ddf309f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12376, cores: 1)
+Python auto-reloader enabled
+thomasli.tk [pid: 12376|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 754 bytes} [Thu Sep 13 12:14:37 2018] GET / => generated 15 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 12376|app: 0|req: 2/2] 218.107.55.254 () {44 vars in 741 bytes} [Thu Sep 13 12:14:48 2018] GET /user/haha => generated 15 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+thomasli.tk [pid: 12376|app: 0|req: 3/3] 119.147.193.63 () {40 vars in 474 bytes} [Thu Sep 13 12:15:10 2018] GET / => generated 15 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12376)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:15:52 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x55b3d6603f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b3d6603f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12387, cores: 1)
+[2018-09-13 12:15:52,326] ERROR in app: Exception on /user/haha [GET]
+Traceback (most recent call last):
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./hello.py", line 10, in user
+    return "Hello," + {{name}}
+TypeError: unhashable type: 'set'
+Python auto-reloader enabled
+thomasli.tk [pid: 12387|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 772 bytes} [Thu Sep 13 12:15:52 2018] GET /user/haha => generated 291 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12387)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:18:07 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x555a19bd3f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555a19bd3f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12405, cores: 1)
+Python auto-reloader enabled
+[2018-09-13 12:18:08,356] ERROR in app: Exception on /user/haha [GET]
+Traceback (most recent call last):
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/python_demo/demo1/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./hello.py", line 10, in user
+    return {{name}}
+TypeError: unhashable type: 'set'
+thomasli.tk [pid: 12405|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 772 bytes} [Thu Sep 13 12:18:08 2018] GET /user/haha => generated 291 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12405)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:18:21 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x559869264f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559869264f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12409, cores: 1)
+thomasli.tk [pid: 12409|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 772 bytes} [Thu Sep 13 12:18:22 2018] GET /user/haha => generated 4 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 78 bytes (1 switches on core 0)
+Python auto-reloader enabled
+[uwsgi-python-reloader] module/file ./hello.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12409)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ljchyh3
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/python_demo/demo1/hello.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /etc/uwsgi/apps-available/demo1_uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3721]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Sep 13 12:18:52 2018] ***
+compiled with version: 6.3.0 20170516 on 11 September 2018 08:18:20
+os: Linux-4.10.15-041015-generic #201705080411 SMP Mon May 8 08:13:08 UTC 2017
+nodename: vpn1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ljchyh3
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/python_demo/demo1
+your processes number limit is 2254
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/python_demo/demo1/hello.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.3 (default, Jan 19 2017, 14:11:04)  [GCC 6.3.0 20170118]
+Set PythonHome to /opt/python_demo/demo1/venv
+Python main interpreter initialized at 0x56349dc05f60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56349dc05f60 pid: 11927 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 12414, cores: 1)
+thomasli.tk [pid: 12414|app: 0|req: 1/1] 218.107.55.254 () {46 vars in 772 bytes} [Thu Sep 13 12:18:52 2018] GET /user/haha => generated 10 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+Python auto-reloader enabled
+thomasli.tk [pid: 12414|app: 0|req: 2/2] 218.107.55.254 () {44 vars in 747 bytes} [Thu Sep 13 12:19:12 2018] GET /user/Trueman => generated 13 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
