@@ -5,7 +5,7 @@ import os
 sys.setdefaultencoding('utf-8')
 
 import flask
-from flask import Flask,jsonify,redirect,url_for
+from flask import Flask,jsonify,redirect,url_for,make_response,request
 import json
 import MySQLdb
 import datetime
@@ -37,6 +37,16 @@ def insert_imgs(img,timenow):
     conn.commit()
     cursor.close()
 
+def insert_imgs_new(filename,timenow):
+    cursor = conn.cursor()
+    cursor.execute("Insert into img(local_url,time) values(%s,%s)", (os.path.join(app.config['UPLOAD_FOLDER'], filename),timenow))
+    conn.commit()
+    cursor.close()
+
+
+
+
+
 
 
 @app.route("/")
@@ -67,12 +77,29 @@ def upload_img():
             #insert_imgs(img,timenow)
             ######save to local path
             #file.save(file.filename)
-            
+            insert_imgs_new(filename,timenow)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             #return redirect(url_for('uploaded_file',filename=filename))
             return '上传成功' #return message to small app
         else:    
             return 'post mode 失败了'
+
+@app.route('/show/<string:filename>', methods=['GET'])
+def show_photo(filename):
+    if request.method == 'GET':
+        if filename is None:
+            pass
+        else:
+            image_data = open(os.path.join(app.config['UPLOAD_FOLDER'], '%s' % filename), "rb").read()
+            response = make_response(image_data)
+            response.headers['Content-Type'] = 'image/png'
+            return response
+    else:
+        pass
+
+
+
+
 
 @app.route("/user/<name>")
 def user(name):
