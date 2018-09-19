@@ -1,13 +1,15 @@
 #coding=utf-8
 import sys
 reload(sys) 
+import os
 sys.setdefaultencoding('utf-8')
 
 import flask
-from flask import Flask,jsonify
+from flask import Flask,jsonify,redirect,url_for
 import json
 import MySQLdb
 import datetime
+from werkzeug.utils import secure_filename
 
 
 conn = MySQLdb.connect(
@@ -18,20 +20,24 @@ conn = MySQLdb.connect(
         db = 'test',
         )
 
-
-#cur = conn.cursor()
-#建表，仅执行一次.
-#cur.execute("create table student(id int ,name varchar(20),class varchar(30),age varchar(10))")
-#插入数据
-#cur.execute("insert into student values('2','Tom','3 year 2 class','9')")
-#寻找指定数据并更新
-#cur.execute("update student set class='3 year 1 class' where name = 'Tom'")
-#cur.close()
-#conn.commit()
-#conn.close()
+UPLOAD_FOLDER = '/opt/python_demo/demo1/imgs/'
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+def allowed_file(filename):
+    return '.' in filename and \
+        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+def insert_imgs(img,timenow):
+    cursor = conn.cursor()
+    cursor.execute("Insert into img(picture,time) values(%s,%s)", (MySQLdb.Binary(img),timenow))
+    conn.commit()
+    cursor.close()
+
+
 
 @app.route("/")
 def hello():
@@ -41,11 +47,29 @@ def hello():
 def upload_img():
     if flask.request.method == 'GET':
         return 'waiting for img'
-    else:        
+    else:
+        if 'file' not in flask.request.files:
+            flash('No file part')
+            print 'No file part'
+            return 'No file part'
         timenow = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         file = flask.request.files["file"]
-        if file:
+        if file.filename == '':
+            flash('No selected file')
+            print 'No selected file'
+            return 'No selected file'
+        if file and allowed_file(file.filename):
             print 'upload img OK'
+            filename = secure_filename(file.filename)
+            print 'filename ='+ filename
+            #####以下两行可以把图片传到数据库，但是会让数据库变得臃肿，不建议直接放数据库
+            #img = file.read()
+            #insert_imgs(img,timenow)
+            ######save to local path
+            #file.save(file.filename)
+            
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            #return redirect(url_for('uploaded_file',filename=filename))
             return '上传成功' #return message to small app
         else:    
             return 'post mode 失败了'
