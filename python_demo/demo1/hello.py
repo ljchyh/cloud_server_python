@@ -18,6 +18,9 @@ conn = MySQLdb.connect(
         user = 'root',
         passwd = '19920527',
         db = 'test',
+        use_unicode=True, 
+        charset="utf8",  #解决无法输入中文的问题
+
         )
 
 UPLOAD_FOLDER = '/opt/python_demo/demo1/imgs/'
@@ -101,12 +104,12 @@ def show_photo(filename):
 
 
 
-@app.route("/user/<name>")
+@app.route("/web_visitors/<name>")
 def user(name):
     userid = 1 
     timenow = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     cur1 = conn.cursor()
-    cur1.execute("insert into user(name,time)\
+    cur1.execute("insert into web_visitors(name,time)\
             values('%s','%s')"%\
             (name,timenow))
     cur1.close()
@@ -115,12 +118,25 @@ def user(name):
 
 @app.route("/json")
 def try_json():
-    t = {
-        'a': 1,
-        'b': 2,
+    curl = conn.cursor()
+    curl.execute("select score from user where name = 'Jingcheng' order by id desc limit 1 ")
+    jcScorelist = curl.fetchone()
+    curl.close()
+    conn.commit()
+
+    #should new one cur or it will error to run execute
+    cur = conn.cursor()
+    cur.execute("select score from user where name = 'Miaodan' order by id desc limit 1 ")
+    mdScorelist = cur.fetchone()
+    jsonmsg = {
+        'Jingcheng': jcScorelist,
+        'Miaodan': mdScorelist,
         'c': [3, 4, 5]
     }
-    return jsonify(t)
+    cur.close()
+    conn.commit()
+    return jsonify(jsonmsg)
+
 
 
 if __name__ == "__main__":
