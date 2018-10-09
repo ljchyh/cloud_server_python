@@ -9,6 +9,7 @@ from flask import Flask,jsonify,redirect,url_for,make_response,request
 import json
 import MySQLdb
 import datetime
+import pytz  #use for timezone
 from werkzeug.utils import secure_filename
 
 
@@ -25,10 +26,13 @@ conn = MySQLdb.connect(
 
 UPLOAD_FOLDER = '/opt/python_demo/demo1/imgs/'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
-
+TZ = pytz.timezone('Asia/Shanghai') 
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['JSON_AS_ASCII'] = False
+
+
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -56,6 +60,51 @@ def insert_imgs_new(filename,timenow):
 def hello():
     return "Hello World112!"
 
+@app.route("/postTask",methods=['GET','POST'])
+def postTask():
+    if flask.request.method == 'GET':
+        return 'For post task'
+    else:
+        #get data from post
+        data = json.loads(request.get_data())
+        print data
+        
+        #fetch name and task, use ensure_ascii = false to enalbe show chinese
+        name = data["name"]
+        print name
+        action = data["action"]
+        print action
+        detail = json.dumps(data["detail"],ensure_ascii=False)
+        print detail
+
+        #get score from db
+        curl = conn.cursor()
+        if name == 'Jingcheng':
+            curl.execute("select score from user where name = 'Jingcheng' order by id desc limit 1 ")
+        else:
+            curl.execute("select score from user where name = 'Miaodan' order by id desc limit 1 ")
+        #care about null
+        score = curl.fetchone()
+        if score == None:
+            score = 0
+            print "null change to " + str(score)
+        else:
+            score = score[0]
+            print score
+        
+        #get time
+        timenow = datetime.datetime.now(TZ).strftime('%Y-%m-%d %H:%M:%S')
+        
+        #write into db
+        curl.execute("insert into user(name,action,detail,score,time)\
+            values('%s','%s','%s','%d','%s')"%\
+            (name,action,detail,score,timenow))
+        curl.close()
+        conn.commit()
+        return json.dumps(data)
+
+
+
 @app.route("/upload_img", methods=['GET', 'POST'])
 def upload_img():
     if flask.request.method == 'GET':
@@ -65,7 +114,7 @@ def upload_img():
             flash('No file part')
             print 'No file part'
             return 'No file part'
-        timenow = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timenow = datetime.datetime.now(TZ).strftime('%Y-%m-%d %H:%M:%S')
         file = flask.request.files["file"]
         if file.filename == '':
             flash('No selected file')
@@ -75,13 +124,16 @@ def upload_img():
             print 'upload img OK'
             filename = secure_filename(file.filename)
             print 'filename ='+ filename
+            
             #####以下两行可以把图片传到数据库，但是会让数据库变得臃肿，不建议直接放数据库
             #img = file.read()
             #insert_imgs(img,timenow)
             ######save to local path
             #file.save(file.filename)
+            
             insert_imgs_new(filename,timenow)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            
             #return redirect(url_for('uploaded_file',filename=filename))
             return '上传成功' #return message to small app
         else:    
@@ -101,13 +153,10 @@ def show_photo(filename):
         pass
 
 
-
-
-
 @app.route("/web_visitors/<name>")
 def user(name):
     userid = 1 
-    timenow = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    timenow = datetime.datetime.now(TZ).strftime('%Y-%m-%d %H:%M:%S')
     cur1 = conn.cursor()
     cur1.execute("insert into web_visitors(name,time)\
             values('%s','%s')"%\
@@ -121,23 +170,29 @@ def try_json():
     curl = conn.cursor()
     curl.execute("select score from user where name = 'Jingcheng' order by id desc limit 1 ")
     jcScorelist = curl.fetchone()
-    curl.close()
-    conn.commit()
-
-    #should new one cur or it will error to run execute
-    cur = conn.cursor()
-    cur.execute("select score from user where name = 'Miaodan' order by id desc limit 1 ")
-    mdScorelist = cur.fetchone()
+    curl.execute("select score from user where name = 'Miaodan' order by id desc limit 1 ")
+    mdScorelist = curl.fetchone()
     jsonmsg = {
         'Jingcheng': jcScorelist,
         'Miaodan': mdScorelist,
         'c': [3, 4, 5]
     }
-    cur.close()
+    curl.close()
     conn.commit()
     return jsonify(jsonmsg)
 
-
+@app.route("/history")
+def history():
+    curl = conn.cursor(MySQLdb.cursors.DictCursor)
+    curl.execute("select * from user")
+    data = curl.fetchall()
+    curl.close()
+    conn.commit()
+    #print data
+    #print str(type(data))
+    
+    #return data
+    return jsonify(data)
 
 if __name__ == "__main__":
     app.run(debug=True)
